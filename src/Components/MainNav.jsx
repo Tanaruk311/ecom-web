@@ -3,6 +3,7 @@ import { Link, NavLink } from "react-router-dom"
 import useEcomStore from '../store/Ecom-store'
 import { ChevronDown } from 'lucide-react'
 import Logo from '../assets/Logo.png'
+import avatar from '../assets/avatar.jpg'
 
 const MainNav = () => {
     const carts = useEcomStore((state) => state.carts)
@@ -82,7 +83,7 @@ const MainNav = () => {
                                 className='flex items-center gap-2 hover:bg-blue-600 px-2 py-3 rounded-md'>
                                 <img
                                     className='w-8 h-8 rounded-full'
-                                    src="https://files.oaiusercontent.com/file-PPm1hU5uybMijvvB5YD8SD?se=2024-11-30T11%3A58%3A04Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3Dcc3b15dd-1028-4731-b0a3-9d943f680185.webp&sig=HzcQYM%2BudOpaY/1PtROIdMZTm9pGguiFhLAL42flOGs%3D" />
+                                    src={avatar}/>
                                 <ChevronDown />
                             </button>
                             {
