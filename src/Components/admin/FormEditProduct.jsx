@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import useEcomStore from '../../store/Ecom-store';
 import { createProduct,readProduct,listProduct,updateProduct } from '../../api/Product'
 import { toast } from 'react-toastify';
-import UpLoadfile from './Uploadfile';
+import Uploadfile from './Uploadfile';
 import { useParams,useNavigate } from 'react-router-dom';
 
 
@@ -123,7 +123,7 @@ const FormEditProduct = () => {
                 </select>
                 <hr />
                   {/* upload filed */}
-                  <UpLoadfile  form={form} setForm={setForm}/>
+                  <Uploadfile  form={form} setForm={setForm}/>
                 <button className='bg-blue-700 text-white rounded-sm shadow-lg'>Edit Product</button>
                 <br />
                 <hr />

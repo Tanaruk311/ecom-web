@@ -139,7 +139,7 @@ const FormProduct = () => {
                 </select>
                 <hr />
                   {/* upload filed */}
-                  <UpLoadfile  form={form} setForm={setForm}/>
+                  <Uploadfile  form={form} setForm={setForm}/>
                 <button className='bg-blue-700 p-2 text-white rounded-md shadow-md mb-44'
                 hover:scale-105 hover:translate-y-1  hover:duration-200
                     >Add Product</button>
